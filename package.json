@@ -1,0 +1,32 @@
+{
+  "name": "projectpbft",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "node_1": "nodemon --watch dev -e js dev/network.js 3000 http://localhost:3000",
+    "node_2": "nodemon --watch dev -e js dev/network.js 3002 http://localhost:3002",
+    "node_3": "nodemon --watch dev -e js dev/network.js 3003 http://localhost:3003",
+    "node_4": "nodemon --watch dev -e js dev/network.js 3004 http://localhost:3004",
+    "node_5": "nodemon --watch dev -e js dev/network.js 3005 http://localhost:3005",
+    "node_1_test": "nodemon --watch dev -e js dev/networkTest.js 3000 http://localhost:3000",
+    "node_2_test": "nodemon --watch dev -e js dev/networkTest.js 3002 http://localhost:3002",
+    "node_3_test": "nodemon --watch dev -e js dev/networkTest.js 3003 http://localhost:3003",
+    "node_4_test": "nodemon --watch dev -e js dev/networkTest.js 3004 http://localhost:3004",
+    "node_5_test": "nodemon --watch dev -e js dev/networkTest.js 3005 http://localhost:3005"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "elliptic": "^6.5.4",
+    "express": "^4.17.1",
+    "install": "^0.13.0",
+    "nodemon": "^2.0.7",
+    "prompt-sync": "^4.2.0",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "sha256": "^0.2.0"
+  }
+}
